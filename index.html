@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="input">
+        <div box>
+          <div class="dmy">Day</div>
+          <input type="text" name="DD" id="DD" placeholder="DD" />
+        </div>
+
+        <div box>
+          <div class="dmy">Month</div>
+          <input type="text" name="MM" id="MM" placeholder="MM" />
+        </div>
+
+        <div box>
+          <div class="dmy">Year</div>
+          <input type="text" name="YYYY" id="YYYY" placeholder="YYYY" />
+        </div>
+      </div>
+      <div class="rect">
+        <div class="rectangle"></div>
+        <img onclick="calculateAge()" class="icon-arrow" src="assets/images/icon-arrow.svg" alt="" />
+        
+      </div>
+
+      <div class="sec">
+        <div class="calc">
+          <div class="years">--</div>
+          <div class="time">years</div>
+        </div>
+      </div>
+      <div class="sec">
+        <div class="calc">
+          <div class="months">--</div>
+          <div class="time">months</div>
+        </div>
+      </div>
+      <div class="sec">
+        <div class="calc">
+          <div class="days">--</div>
+          <div class="time">days</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+  
+  <script src="script.js"></script>
+  
+</html>
