@@ -133,8 +133,8 @@ input[type="text"]::placeholder {
   margin-left: auto; /* Adjust the margin to position the icon */
 }
 
-.icon-arrow:hover{
-    background: var(--Black, #151515);
+.icon-arrow:hover {
+  background: var(--Black, #151515);
 }
 
 .sec {
@@ -151,7 +151,7 @@ input[type="text"]::placeholder {
 .months,
 .days {
   color: var(--Purple, #854dff);
-    
+
   /* Heading L */
   font-family: Poppins-bi;
   font-size: 104px;
@@ -173,3 +173,104 @@ input[type="text"]::placeholder {
   letter-spacing: -2.08px;
 }
 
+@media only screen and (max-width: 600px) {
+
+    body, html{
+        padding: 0;
+        margin: 0;
+        margin-top: 60px;
+        width: 100%;
+    }
+  .card {
+    width: 343px;
+    height: 486px;
+    padding: 48px 24px;
+  }
+  .input {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+  input[type="text"] {
+    display: flex;
+    width: 60px;
+    height: 40px;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--Line, #dcdcdc);
+    font-size: 20px;
+  }
+  input[type="text"]::placeholder {
+    color: var(--Black, #151515);
+    font-family: Poppins-bold;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
+  }
+  .rect {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+  }
+  .icon-arrow {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 216px;
+    background: var(--Purple, #854dff);
+    padding: 15px;
+    margin-right: 150px;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 70px;
+    margin-left: 150px;
+  }
+  .sec {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+  }
+  .calc {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .time {
+    color: var(--Black, #151515);
+    font-family: Poppins-bi;
+    font-size: 56px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 110%; /* 61.6px */
+    letter-spacing: -1.12px;
+  }
+  .years,
+  .months,
+  .days {
+    color: var(--Purple, #854dff);
+    font-family: Poppins-bi;
+    font-size: 56px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 110%; /* 61.6px */
+    letter-spacing: -1.12px;
+  }
+  .rectangle {
+    height: 1px;
+    align-self: stretch;
+    background: var(--Line, #dcdcdc);
+  }
+  .time-box {
+    margin-top: 50px;
+  }
+}
